@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Clash";
+  src: url("/fonts/OTF/ClashDisplay-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash";
+  src: url("/fonts/OTF/ClashDisplay-Medium.otf") format("opentype"); /* düzəldildi: .otff -> .otf */
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash";
+  src: url("/fonts/OTF/ClashDisplay-Bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash";
+  src: url("/fonts/OTF/ClashDisplay-Semibold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@theme {
+  --font-display: "Satoshi", sans-serif;
+  --font-clash: "Clash", sans-serif;
+
+  /* Breakpoints */
+  --breakpoint-3xl: 120rem;
+  --breakpoint-menu: 1045px;
+
+  /* Colors (YENİ RƏNGLƏR) */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-mainColor3: #00BFA6;       /* Teal/mint green aksent */
+  --color-alertColor2: #A0AEC0;      /* Cool gray */
+  --color-mainColor2: #FFF;       /* Deep gray background */
+  --color-subTitleGray: #CBD5E0;     /* Subtitle text */
+  --color-purple500: #805AD5;        /* Muted purple */
+  --color-purple700: #4C2889;        /* Dark royal purple */
+  --color-bg: #1A202C;               /* Base dark background */
+  --color-inputBg: #2D3748;          /* Input field bg */
+
+  /* Experimental Avocado Colors (Dəyişildi) */
+  --color-avocado-100: oklch(0.99 0.01 130);   /* Açıq yaşıl */
+  --color-avocado-200: oklch(0.96 0.05 125);   /* Yumşaq açıq yaşıl */
+  --color-avocado-300: oklch(0.90 0.12 122);   /* Yumşaq təbii yaşıl */
+  --color-avocado-400: oklch(0.85 0.18 120);   /* Daha doymuş yaşıl */
+  --color-avocado: oklch(0.78 0.21 119);       /* Əsas yaşıl */
+  --color-avocado-600: oklch(0.52 0.17 118);   /* Tünd yaşıl */
+
+  /* Easing */
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+
+  /* Gradient (YENİ) */
+  --bg-custom-gradient: linear-gradient(to right,
+    #00BFA6 0%,
+    #6B46C1 25%,
+    #B83280 50%,
+    #FF8C00 75%,
+    #1A202C 100%);
+
+  /* Spacing */
+  --spacing-60: 60px;
+}
+
+:root {
+  --background: #1A202C;     /* Dark base */
+  --foreground: #F7FAFC;     /* Açıq yazı */
+  --textColor: #E2E8F0;      /* Yazı tonu */
+  --bg: #1A202C;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #f8f8f8;
+    --foreground: #161516;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--bg);
+  font-family: Arial, Helvetica, sans-serif;
+}
