@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Clash";
+  src: url("/fonts/OTF/ClashDisplay-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash";
+  src: url("/fonts/OTF/ClashDisplay-Medium.otf") format("opentype"); /* düzəldildi: .otff -> .otf */
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash";
+  src: url("/fonts/OTF/ClashDisplay-Bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash";
+  src: url("/fonts/OTF/ClashDisplay-Semibold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@theme {
+  --font-display: "Satoshi", sans-serif;
+  --font-clash: "Clash", sans-serif;
+
+  /* Breakpoints */
+  --breakpoint-3xl: 120rem;
+  --breakpoint-menu: 1045px;
+
+  /* Colors - Cohesive Modern Portfolio Palette */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* Primary Accent - Vibrant Teal/Cyan */
+  --color-mainColor3: #06B6D4;       /* Cyan 500 - Primary accent */
+  --color-primary-1: #0E7490;        /* Cyan 700 - Darker accent */
+  --color-primary-2: #22D3EE;        /* Cyan 400 - Lighter accent */
+  
+  /* Secondary Accent - Complementary Purple */
+  --color-purple500: #8B5CF6;        /* Violet 500 - Secondary accent */
+  --color-purple700: #6D28D9;        /* Violet 700 - Darker purple */
+  --color-purple-400: #A78BFA;       /* Violet 400 - Lighter purple */
+  
+  /* Text Colors */
+  --color-mainColor2: #FFFFFF;       /* Pure white for headings */
+  --color-subTitleGray: #CBD5E0;     /* Light gray for subtitles */
+  --color-alertColor2: #94A3B8;      /* Medium gray for secondary text */
+  --color-text-primary: #F1F5F9;     /* Primary text */
+  --color-text-secondary: #94A3B8;   /* Secondary text */
+  --color-text-muted: #64748B;       /* Muted text */
+  
+  /* Background Colors */
+  --color-bg: #0F172A;               /* Base dark background - Slate 900 */
+  --color-bg-secondary: #1E293B;     /* Secondary dark - Slate 800 */
+  --color-bg-tertiary: #334155;      /* Tertiary dark - Slate 700 */
+  --color-inputBg: #1E293B;          /* Input field bg */
+  --color-light-gray-3: #1E293B;     /* Light gray background */
+  --color-gray-2: #94A3B8;           /* Gray for secondary elements */
+  
+  /* Interactive Elements */
+  --color-border: #334155;           /* Border color */
+  --color-border-hover: #475569;     /* Border hover */
+  
+  /* Legacy Avocado Colors - Keeping for compatibility */
+  --color-avocado-100: #F0FDFA;
+  --color-avocado-200: #CCFBF1;
+  --color-avocado-300: #99F6E4;
+  --color-avocado-400: #5EEAD4;
+  --color-avocado: #06B6D4;
+  --color-avocado-600: #0891B2;
+
+  /* Easing */
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+
+  /* Gradient - Cohesive Cyan to Purple */
+  --bg-custom-gradient: linear-gradient(to right,
+    #06B6D4 0%,
+    #8B5CF6 50%,
+    #0F172A 100%);
+
+  /* Spacing */
+  --spacing-60: 60px;
+}
+
+:root {
+  --background: #0F172A;     /* Dark base - Slate 900 */
+  --foreground: #F1F5F9;     /* Light text - Slate 100 */
+  --textColor: #E2E8F0;      /* Text tone - Slate 200 */
+  --bg: #0F172A;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #f8f8f8;
+    --foreground: #161516;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--bg);
+  font-family: Arial, Helvetica, sans-serif;
+}
