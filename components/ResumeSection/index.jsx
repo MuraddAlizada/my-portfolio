@@ -20,9 +20,9 @@ const ResumeSection = ({ id }) => {
 
           {/* Experiences Container */}
           <div className={styles.experiencesContainer}>
-            {/* Item 2 - Backend Development Div Academy (Right) */}
+            {/* Item 2 - Backend Development Div Academy (Left) */}
             <div
-              data-aos="fade-right"
+              data-aos="fade-left"
               data-aos-delay="200"
               className={styles.experienceItem}
             >
@@ -31,6 +31,17 @@ const ResumeSection = ({ id }) => {
                 data-aos="fadeInLeft"
                 data-aos-delay="200"
               >
+                <div className={styles.experienceIcon}>
+                  <IoSchoolSharp />
+                </div>
+                <div className={styles.experienceOrg}>Div Academy</div>
+                <div className={styles.experienceDuration}>November 2025 - Present</div>
+              </div>
+              <div
+                className={styles.experienceRight}
+                data-aos="fadeInRight"
+                data-aos-delay="100"
+              >
                 <div className={styles.experienceTitle}>
                   Backend Development
                 </div>
@@ -38,28 +49,27 @@ const ResumeSection = ({ id }) => {
                   Actively advancing skills in backend development, focusing on Node.js, databases, REST APIs, and server-side application architecture. Gaining practical experience in building scalable, secure, and high-performance backend systems.
                 </div>
               </div>
-              <div
-                className={styles.experienceRight}
-                data-aos="fadeInRight"
-                data-aos-delay="100"
-              >
-                <div className={styles.experienceIcon}>
-                  <IoSchoolSharp />
-                </div>
-                <div className={styles.experienceOrg}>Div Academy</div>
-                <div className={styles.experienceDuration}>November 2025 - Present</div>
-              </div>
             </div>
 
-            {/* Item 1 - OKmedia Frontend Developer (Left) */}
+            {/* Item 1 - OKmedia Frontend Developer (Right) */}
             <div
-              data-aos="fade-left"
+              data-aos="fade-right"
               data-aos-delay="100"
               className={styles.experienceItem}
             >
               <div
                 className={styles.experienceLeft}
                 data-aos="fadeInLeft"
+                data-aos-delay="200"
+              >
+                <div className={styles.experienceTitle}>Frontend Developer</div>
+                <div className={styles.experienceDesc}>
+                  Built responsive, high-performance websites by transforming design mockups into production-ready code. Enhanced frontend efficiency, ensured cross-browser compatibility, and maintained clean, modular code for seamless user experiences.
+                </div>
+              </div>
+              <div
+                className={styles.experienceRight}
+                data-aos="fadeInRight"
                 data-aos-delay="100"
               >
                 <div className={styles.experienceIcon}>
@@ -68,16 +78,6 @@ const ResumeSection = ({ id }) => {
                 <div className={styles.experienceOrg}>OKmedia</div>
                 <div className={styles.experienceDuration}>
                   July 2025 - Present
-                </div>
-              </div>
-              <div
-                className={styles.experienceRight}
-                data-aos="fadeInRight"
-                data-aos-delay="200"
-              >
-                <div className={styles.experienceTitle}>Frontend Developer</div>
-                <div className={styles.experienceDesc}>
-                  Built responsive, high-performance websites by transforming design mockups into production-ready code. Enhanced frontend efficiency, ensured cross-browser compatibility, and maintained clean, modular code for seamless user experiences.
                 </div>
               </div>
             </div>
