@@ -147,15 +147,25 @@ const mockData = [
   },
  
 
-  {
+  // {
+  //   id: 14,
+  //   imageHover: "/images/mockups/be.png",
+  //   image: "/images/mockups/be.png",
+  //   alt: "Baku Electronics Project",
+  //   title: "Next.js",
+  //   description: "A personal finance app to manage your money smartly.",
+  //   buttonText: "Website Link",
+  //   url: "https://baku-electronics-sandy.vercel.app/",
+  // },
+    {
     id: 14,
-    imageHover: "/images/mockups/be.png",
-    image: "/images/mockups/be.png",
-    alt: "Baku Electronics Project",
-    title: "Next.js",
+    imageHover: "/images/mockups/inrolin.png",
+    image: "/images/mockups/inrolin.png",
+    alt: "Inrolin",
+    title: "Typescript",
     description: "A personal finance app to manage your money smartly.",
     buttonText: "Website Link",
-    url: "https://baku-electronics-sandy.vercel.app/",
+    url: "https://inrolin.com/",
   },
   {
     id: 15,

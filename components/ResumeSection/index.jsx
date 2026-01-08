@@ -20,37 +20,6 @@ const ResumeSection = ({ id }) => {
 
           {/* Experiences Container */}
           <div className={styles.experiencesContainer}>
-            {/* Item 1 - OKmedia Frontend Developer (Left) */}
-            <div
-              data-aos="fade-left"
-              data-aos-delay="100"
-              className={styles.experienceItem}
-            >
-              <div
-                className={styles.experienceLeft}
-                data-aos="fadeInLeft"
-                data-aos-delay="100"
-              >
-                <div className={styles.experienceIcon}>
-                  <MdWork />
-                </div>
-                <div className={styles.experienceOrg}>OKmedia</div>
-                <div className={styles.experienceDuration}>
-                  September 2025 - Present
-                </div>
-              </div>
-              <div
-                className={styles.experienceRight}
-                data-aos="fadeInRight"
-                data-aos-delay="200"
-              >
-                <div className={styles.experienceTitle}>Frontend Developer</div>
-                <div className={styles.experienceDesc}>
-                  Built responsive, high-performance websites by transforming design mockups into production-ready code. Enhanced frontend efficiency, ensured cross-browser compatibility, and maintained clean, modular code for seamless user experiences.
-                </div>
-              </div>
-            </div>
-
             {/* Item 2 - Backend Development Div Academy (Right) */}
             <div
               data-aos="fade-right"
@@ -78,7 +47,100 @@ const ResumeSection = ({ id }) => {
                   <IoSchoolSharp />
                 </div>
                 <div className={styles.experienceOrg}>Div Academy</div>
-                <div className={styles.experienceDuration}>September 2025 - Present</div>
+                <div className={styles.experienceDuration}>November 2025 - Present</div>
+              </div>
+            </div>
+
+            {/* Item 1 - OKmedia Frontend Developer (Left) */}
+            <div
+              data-aos="fade-left"
+              data-aos-delay="100"
+              className={styles.experienceItem}
+            >
+              <div
+                className={styles.experienceLeft}
+                data-aos="fadeInLeft"
+                data-aos-delay="100"
+              >
+                <div className={styles.experienceIcon}>
+                  <MdWork />
+                </div>
+                <div className={styles.experienceOrg}>OKmedia</div>
+                <div className={styles.experienceDuration}>
+                  July 2025 - Present
+                </div>
+              </div>
+              <div
+                className={styles.experienceRight}
+                data-aos="fadeInRight"
+                data-aos-delay="200"
+              >
+                <div className={styles.experienceTitle}>Frontend Developer</div>
+                <div className={styles.experienceDesc}>
+                  Built responsive, high-performance websites by transforming design mockups into production-ready code. Enhanced frontend efficiency, ensured cross-browser compatibility, and maintained clean, modular code for seamless user experiences.
+                </div>
+              </div>
+            </div>
+
+            {/* Item 5 - Inrolin Frontend Developer (Left) */}
+            <div
+              data-aos="fade-left"
+              data-aos-delay="100"
+              className={styles.experienceItem}
+            >
+              <div
+                className={styles.experienceLeft}
+                data-aos="fadeInLeft"
+                data-aos-delay="100"
+              >
+                <div className={styles.experienceIcon}>
+                  <MdWork />
+                </div>
+                <div className={styles.experienceOrg}>Inrolin</div>
+                <div className={styles.experienceDuration}>
+                  October 2025
+                </div>
+              </div>
+              <div
+                className={styles.experienceRight}
+                data-aos="fadeInRight"
+                data-aos-delay="200"
+              >
+                <div className={styles.experienceTitle}>Frontend Developer</div>
+                <div className={styles.experienceDesc}>
+                 Converted design mockups into interactive, high-performance web pages optimized for fast loading and cross-browser compatibility.
+                </div>
+              </div>
+            </div>
+
+            {/* Item 4 - Lacheen Co (Right) */}
+            <div
+              data-aos="fade-right"
+              data-aos-delay="200"
+              className={styles.experienceItem}
+            >
+              <div
+                className={styles.experienceLeft}
+                data-aos="fadeInLeft"
+                data-aos-delay="200"
+              >
+                <div className={styles.experienceTitle}>
+                  Full Stack Developer
+                </div>
+                <div className={styles.experienceDesc}>
+                  Developed a comprehensive e-commerce platform for Lacheen Co, handling all aspects from UX/UI research and design to full stack implementation. Created custom authentication with Google and credentials, implemented real-time notifications, order tracking system, and built both frontend and backend from scratch. This project showcased my ability to deliver end-to-end solutions with modern web technologies.
+                </div>
+              </div>
+              <div
+                className={styles.experienceRight}
+                data-aos="fadeInRight"
+                data-aos-delay="100"
+              >
+                <div className={styles.experienceIcon}>
+                  <MdWork />
+                </div>
+                <div className={styles.experienceOrg}>Lacheen Co</div>
+                <div className={styles.experienceDuration}>September 2025</div>
               </div>
             </div>
 
@@ -98,7 +160,7 @@ const ResumeSection = ({ id }) => {
                 </div>
                 <div className={styles.experienceOrg}>Div Academy</div>
                 <div className={styles.experienceDuration}>
-                  January - September 2025
+                  December 2024 - July 2025
                 </div>
               </div>
               <div
@@ -109,68 +171,6 @@ const ResumeSection = ({ id }) => {
                 <div className={styles.experienceTitle}>Advanced Frontend Development</div>
                 <div className={styles.experienceDesc}>
                   Completed an intensive frontend development program, acquiring hands-on experience with React, JavaScript, CSS, Tailwind, and other modern frontend tools. Built expertise in creating responsive, fast, and maintainable web applications.
-                </div>
-              </div>
-            </div>
-
-            {/* Item 4 - Lacheen Co (Right) */}
-            <div
-              data-aos="fade-right"
-              data-aos-delay="200"
-              className={styles.experienceItem}
-            >
-              <div
-                className={styles.experienceLeft}
-                data-aos="fadeInLeft"
-                data-aos-delay="200"
-              >
-                <div className={styles.experienceTitle}>
-                  Full Stack E-commerce Project
-                </div>
-                <div className={styles.experienceDesc}>
-                  Developed a comprehensive e-commerce platform for Lacheen Co, handling all aspects from UX/UI research and design to full stack implementation. Created custom authentication with Google and credentials, implemented real-time notifications, order tracking system, and built both frontend and backend from scratch. This project showcased my ability to deliver end-to-end solutions with modern web technologies.
-                </div>
-              </div>
-              <div
-                className={styles.experienceRight}
-                data-aos="fadeInRight"
-                data-aos-delay="100"
-              >
-                <div className={styles.experienceIcon}>
-                  <MdWork />
-                </div>
-                <div className={styles.experienceOrg}>Lacheen Co</div>
-                <div className={styles.experienceDuration}>April - June 2025</div>
-              </div>
-            </div>
-
-            {/* Item 5 - UpWork Frontend Developer (Left) */}
-            <div
-              data-aos="fade-left"
-              data-aos-delay="100"
-              className={styles.experienceItem}
-            >
-              <div
-                className={styles.experienceLeft}
-                data-aos="fadeInLeft"
-                data-aos-delay="100"
-              >
-                <div className={styles.experienceIcon}>
-                  <MdWork />
-                </div>
-                <div className={styles.experienceOrg}>UpWork</div>
-                <div className={styles.experienceDuration}>
-                  November 2024 - Present
-                </div>
-              </div>
-              <div
-                className={styles.experienceRight}
-                data-aos="fadeInRight"
-                data-aos-delay="200"
-              >
-                <div className={styles.experienceTitle}>Frontend Developer (Freelance)</div>
-                <div className={styles.experienceDesc}>
-                  Collaborated with international clients to convert design mockups into responsive, high-performance websites. Focused on optimizing frontend performance for fast load times and cross-browser compatibility. Maintained clear communication to deliver projects aligned with client expectations and ensured clean, maintainable code.
                 </div>
               </div>
             </div>
